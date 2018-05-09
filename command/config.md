@@ -1,5 +1,16 @@
 # 設定檔
 
+```
+git config --global user.name [username]
+```
+
+```
+git config --local user.name [username]
+
+# same
+
+vi .git/config 
+```
 
 ### alias
 
