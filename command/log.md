@@ -1,29 +1,27 @@
 # log
 
+語法結構
 
 ```
-git log [HEAD]
-git log master
-git log --oneline
-git log --author="alincode"
-git log -p hello.js
+usage: git log [<options>] [<revision-range>] [[--] <path>...]
+   or: git show [<options>] <object>...
 
-git log --follow README.md
-```
-
-```
-git log --oneline \
---abbrev-commit \
---all \
---graph \
---decorate \
---color
+    -q, --quiet           suppress diff output
+    --source              show source
+    --use-mailmap         Use mail map file
+    --decorate[=...]      decorate options
+    -L <n,m:file>         Process line range n,m in file, counting from 1
 ```
 
-```
-git log --graph --oneline --all --decorate
-```
+### 常用指令範例
 
-```
-git-shortlog
-```
+| 範例                                                                 | 說明             |
+|--------------------------------------------------------------------|----------------|
+| git log [HEAD]                                                     |                |
+| git log master                                                     |                |
+| git log --oneline                                                  |                |
+| git log --author="alincode"                                        |                |
+| git log -p hello.js                                                |                |
+| git log --follow README.md                                         |                |
+| git log --graph --oneline --all --decorate                         | 顯示所有分之並圖形化     |
+| git log --oneline --abbrev-commit --all --graph --decorate --color |                |
