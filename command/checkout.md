@@ -1,6 +1,14 @@
-# Git Checkout 指令
+# git checkout 指令
 
-語法結構
+### 常用指令範例
+
+| 範例                       | 說明                            |
+|--------------------------|-------------------------------|
+| git checkout dev         |                               |
+| git checkout -b dev      |                               |
+| git checkout — README.md | 將 README.md 恢復到上一次 Commit 的狀態 |
+
+### 語法結構
 
 ```
 usage: git checkout [<options>] <branch>
@@ -27,10 +35,3 @@ usage: git checkout [<options>] <branch>
                           do not check if another worktree is holding the given ref
     --progress            force progress reporting
 ```
-
-### 常用指令範例
-
-| 範例                  | 說明  |
-|---------------------|-----|
-| git checkout dev    |     |
-| git checkout -b dev |     |

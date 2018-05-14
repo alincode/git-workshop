@@ -1,6 +1,14 @@
 # Git Commit 指令
 
-語法結構
+### 常用範例
+
+| 範例                              | 說明  |
+|---------------------------------|-----|
+| git commit -m "commit message"  |     |
+| git commit -am "commit message" |     |
+| git commit --amend              |     |
+
+### 語法結構
 
 ```
 usage: git commit [<options>] [--] <pathspec>...
@@ -48,11 +56,3 @@ Commit contents options
     -u, --untracked-files[=<mode>]
                           show untracked files, optional modes: all, normal, no. (Default: all)
 ```
-
-### 常用指令範例
-
-| 範例                              | 說明  |
-|---------------------------------|-----|
-| git commit -m "commit message"  |     |
-| git commit -am "commit message" |     |
-| git commit --amend              |     |

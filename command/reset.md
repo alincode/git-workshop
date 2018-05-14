@@ -1,10 +1,28 @@
-# Reset
+# git reset 指令
 
-### --sort
+* --sort: 轉變為 uncommit 狀態
+* --hard: 檔案會消失
 
-轉變為 uncommit 狀態
+### 常用範例
 
+| 範例                   | 說明     |
+|----------------------|--------|
+| git reset –hard HEAD | 還原到最前面 |
+| git reset sort HEAD  |        |
 
-### -- hard
+### 語法結構
 
-檔案會消失
+```
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] <tree-ish> [--] <paths>...
+   or: git reset --patch [<tree-ish>] [--] [<paths>...]
+
+    -q, --quiet           be quiet, only report errors
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    -p, --patch           select hunks interactively
+    -N, --intent-to-add   record only the fact that removed paths will be added later
+```

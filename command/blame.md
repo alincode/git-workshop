@@ -1,6 +1,15 @@
-# Git Blame 指令
+# git blame 指令
 
-語法結構
+### 常用範例
+
+| 範例                         | 說明  |
+|----------------------------|-----|
+| git blame -L 2,5 hello.txt |     |
+| git blame -L 2 hello.txt   |     |
+| git blame -L 2, hello.txt  |     |
+| git blame -L ,5 hello.txt  |     |
+
+### 語法結構
 
 ```
 usage: git blame [<options>] [<rev-opts>] [<rev>] [--] <file>
@@ -30,12 +39,3 @@ usage: git blame [<options>] [<rev-opts>] [<rev>] [--] <file>
     -L <n,m>              Process only line range n,m, counting from 1
     --abbrev[=<n>]        use <n> digits to display SHA-1s
 ```
-
-### 常用指令範例
-
-| 範例                         | 說明  |
-|----------------------------|-----|
-| git blame -L 2,5 hello.txt |     |
-| git blame -L 2 hello.txt   |     |
-| git blame -L 2, hello.txt  |     |
-| git blame -L ,5 hello.txt  |     |
