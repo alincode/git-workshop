@@ -16,6 +16,11 @@
 
 ![Git Flow - hotfix branches](https://patrickzahnd.ch/uploads/gitflow-hotfix-branches-512x1024.png)
 
+
+### 練習題
+
+* 從何開始你的容器？
+
 ### gitflow and scrum
 
 ![Git Flow - gitflow and scrum](https://patrickzahnd.ch/uploads/gitflow-sprint-721x1024.png)

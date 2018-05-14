@@ -1,10 +1,20 @@
 # Github
 
 * Star
-* clone
-* fork
 * issue
+* clone
 * ph-page
+
+## fork
+
+* fork 是發生在「整個容器」的階層上，branch 是發生在「單一容器」中。
+
+### 使用情境
+
+* 常發生在長期無人維護的專案，但你需要使用並修改。
+* 你需要用某個專案當基底，開發出一條完全新的路線。
+
+## 練習題
 
 ### 練習題：在 Github 上，新增一個叫 profile 的 repository
 
