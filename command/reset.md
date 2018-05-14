@@ -12,7 +12,7 @@
 | 範例                   | 說明     |
 |----------------------|--------|
 | git reset --sort HEAD  |        |
-| git reset –-hard HEAD | 還原到最前面 |
+| git reset –-hard | 回覆到沒修改的狀態 |
 
 
 ### 語法結構

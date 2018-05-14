@@ -1,5 +1,15 @@
 # Git VS SVN
 
+### Git
+
+* Straight merge 預設的合併模式，會有全部的被合併的 branch commits 記錄加上一個 merge-commit，看線圖會有兩條 Parents 線，並保留所有 commit log。
+
+
+### SVN
+
+* Squashed commit 壓縮成只有一個 merge-commit，不會有被合併的 log。
+
+
 ### transport
 
 ![Git transport](https://patrickzahnd.ch/uploads/git-transport-v1-1024x723.png)

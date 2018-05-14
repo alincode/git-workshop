@@ -1,5 +1,7 @@
 # git pull 指令
 
+拉回遠端 repo 最新版送交歷史紀錄到本地端 repo
+
 * clone vs pull
 * git pull =  git fetch + git merge
 

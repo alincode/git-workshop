@@ -1,11 +1,14 @@
 # git clone 指令
 
+複製一份遠端專案至本地端
+
 ### 常用範例
 
-| 範例                                    | 說明     |
-|---------------------------------------|--------|
-| git clone ~/remote-repo alincode-repo |        |
-| git clone ~/remote-repo               | 複製遠端容器 |
+| 範例                                                 | 說明              |
+|----------------------------------------------------|-----------------|
+| git clone https://github.com/alincode/git-workshop | 複製遠端容器          |
+| git clone ~/remote-repo alincode-repo              | 複製遠端容器，並指定資料夾名稱 |
+| git clone ~/remote-repo                            | 複製遠端容器          |
 
 
 ### 語法結構

@@ -5,10 +5,10 @@
 * 將本地端新增的送交紀錄，發佈至遠端
 ### 常用範例
 
-| 範例                        | 說明  |
-|---------------------------|-----|
-| git push origin master -u |     |
-| git push origin master    | 發佈  |
+| 範例                        | 說明                                             |
+|---------------------------|------------------------------------------------|
+| git push origin master -u | 從本地端的 master branch 上傳到 origin 的 master branch |
+| git push origin master    | 發佈                                             |
 
 ### 語法結構
 

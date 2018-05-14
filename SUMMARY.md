@@ -34,11 +34,12 @@
   * [練習題：新增一個分支](practice/branch.md)
   * [合併 merge](command/merge.md)
   * [觀念解說：解決衝突](foundation/conflict.md)
-  * [練習題：解決衝突]()
+  * [練習題：解決衝突](practice/conflict.md)
 * [修改送交]()
   * [還原 reset](command/reset.md)
   * [資料還原 revert](command/revert.md)
-  * [觀念講解：reset vs revert]()
+  * [(進階指令) rebase](command/rebase.md)
+  * [觀念講解：reset vs revert](foundation/reset-vs-revert.md)
   * [練習題：還原紀錄]()
 * [遠端協作]()
   * [容器](foundation/container.md)
@@ -46,6 +47,7 @@
   * [複製 clone](command/clone.md)
   * [拉 pull](command/pull.md)
   * [更新 fetch](command/fetch.md)
+  * [練習題：透過 fetch 指令取得最新送交紀錄](practice/fetch.md)
   * [部署 push](command/push.md)
   * [練習題：發佈送交](practice/push.md)
   * [標籤 tag](command/tag.md)
@@ -68,7 +70,7 @@
   * [正確的提交習慣與工作流程](foundation/commit-flow.md)
 
   * [(進階)cherry pick](command/cherry-pick.md)
-  * [(進階)rebase](command/rebase.md)
+  
 
   * [bisect](command/bisect.md)
   * [reflog](command/reflog.md)

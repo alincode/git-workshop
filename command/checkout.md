@@ -1,14 +1,19 @@
 # git checkout 指令
 
+checkout 可用於將特定版本檔案取出，無論是資料夾或檔案皆可。
+
 ### 使用情境
 
 * 切換分支
+* 發現檔案改錯，用git checkout filename把檔案還原到最新的版本
 ### 常用指令範例
 
 | 範例                       | 說明                            |
 |--------------------------|-------------------------------|
-| git checkout dev         |                               |
-| git checkout -b dev      |                               |
+| git checkout README.md   | 取出 README.md 檔案               |
+| git checkout docs/       | 取出特 docs 資料夾                  |
+| git checkout dev         | 取出 dev 分支                     |
+| git checkout -b dev      | 新增 dev 分支，並同時切換到 dev 分之上      |
 | git checkout — README.md | 將 README.md 恢復到上一次 Commit 的狀態 |
 
 ### 語法結構

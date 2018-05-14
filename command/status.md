@@ -2,13 +2,15 @@
 
 ### 使用情境
 
-* 看目前狀態
+* 觀看檔案的狀態
 * 三種狀態
     * Untracked
     * modified
     * staged
 
 ### .gitignore
+
+想忽略的檔案，如暫存檔、log、編譯後的檔案
 
 ### 常用範例
 
