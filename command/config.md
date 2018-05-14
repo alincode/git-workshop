@@ -1,6 +1,20 @@
 # 設定檔
 
-語法結構
+編輯設定檔的三種方式
+
+* vi .git/config
+* 使用 git config 指令
+
+### 常用範例
+
+| 範例                                                  | 說明  |
+|-----------------------------------------------------|-----|
+| git config --global user.name "demo_user"           |     |
+| git config --global user.email "demo_user@demo.com" |     |
+| git config --local user.name "demo_user"            |     |
+| git config --local user.email "demo_user@demo.com"  |     |
+
+### 語法結構
 
 ```
 usage: git config [<options>]
@@ -40,19 +54,7 @@ Other
     --includes            respect include directives on lookup
 ```
 
-```
-git config --global user.name [username]
-```
-
-```
-git config --local user.name [username]
-
-# same
-
-vi .git/config 
-```
-
-### alias
+### 推薦設定的 alias
 
 ```
 alias.co=checkout

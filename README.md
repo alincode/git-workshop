@@ -16,9 +16,6 @@
 1. 至少 40GB 磁碟可用空間
 
 我們在課程中會提供實作練習專用的 VM Image，以方便搭配教材內容。
-### 參考來源
-
-* [gitster/git-htmldocs](https://github.com/gitster/git-htmldocs)
 
 ## License
 

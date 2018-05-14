@@ -2,11 +2,29 @@
 
 ### 常用範例
 
-| 範例                    | 說明     |
-|-----------------------|--------|
-| git tag v0.0.1 xxyyzz | 新增 tag |
-| git tag -d v0.0.1     | 刪除 tag |
+| 範例                     | 說明     |
+|------------------------|--------|
+| git tag                |        |
+| git tag v0.0.1 sha1234 | 新增 tag |
+| git tag -d v0.0.1      | 刪除 tag |
+| git rev-parse v0.0.1   |        |
 
+
+```
+$ git rev-parse v0.0.1
+d93a61550216134ea18ff5db907f066fd8beb866
+```
+
+```
+$ git cat-file -p d93a61550216134ea18ff5db907f066fd8beb866
+
+tree cbfd7a8e6c7bd0eec9f524b42bdce9ff31bac2e3
+parent 59da3738f9ccf00e1246098a65259b713e848926
+author alincode <alincode@gmail.com> 1526267514 +0000
+committer alincode <alincode@gmail.com> 1526267514 +0000
+
+add hello2 file
+```
 
 ### 語法結構
 
