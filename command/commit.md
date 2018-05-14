@@ -1,12 +1,17 @@
-# Git Commit 指令
+# git commit 指令
+
+### 使用情境
+
+* 新增送交
+* 更改送交
 
 ### 常用範例
 
-| 範例                              | 說明  |
-|---------------------------------|-----|
-| git commit -m "commit message"  |     |
-| git commit -am "commit message" |     |
-| git commit --amend              |     |
+| 範例                                | 說明                        |
+|-----------------------------------|---------------------------|
+| git commit -m "commit message"    | 新增一筆送交紀錄                  |
+| git commit -a -m "commit message" | git add . + git commit -m |
+| git commit --amend                | 改變最後一次提交紀錄                |
 
 ### 語法結構
 

@@ -1,18 +1,18 @@
 # 設定檔
 
-編輯設定檔的三種方式
+### 編輯設定檔的方式
 
-* vi .git/config
-* 使用 git config 指令
+* `vi .git/config`
+* 使用 `git config` 指令
 
 ### 常用範例
 
-| 範例                                                  | 說明  |
-|-----------------------------------------------------|-----|
-| git config --global user.name "demo_user"           |     |
-| git config --global user.email "demo_user@demo.com" |     |
-| git config --local user.name "demo_user"            |     |
-| git config --local user.email "demo_user@demo.com"  |     |
+| 範例                                                  | 說明   |
+|-----------------------------------------------------|------|
+| git config --global user.name "demo_user"           |      |
+| git config --global user.email "demo_user@demo.com" |      |
+| git config --local user.name "demo_user"            | 設定名稱 |
+| git config --local user.email "demo_user@demo.com"  | 設定信箱 |
 
 ### 語法結構
 

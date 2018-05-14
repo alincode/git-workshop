@@ -1,6 +1,16 @@
 ### git push 指令
 
-語法結構
+### 使用情境
+
+* 將本地端新增的送交紀錄，發佈至遠端
+### 常用範例
+
+| 範例                        | 說明  |
+|---------------------------|-----|
+| git push origin master -u |     |
+| git push origin master    | 發佈  |
+
+### 語法結構
 
 ```
 usage: git push [<options>] [<repository> [<refspec>...]]
@@ -33,8 +43,3 @@ usage: git push [<options>] [<repository> [<refspec>...]]
                           GPG sign the push
     --atomic              request atomic transaction on remote side
 ```
-
-| 範例                        | 說明  |
-|---------------------------|-----|
-| git push origin master    |     |
-| git push origin master -u |     |

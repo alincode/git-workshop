@@ -3,12 +3,16 @@
 * --sort: 轉變為 uncommit 狀態
 * --hard: 檔案會消失
 
+### 使用情境
+
+* 修正還未發佈的送交紀錄
 ### 常用範例
 
 | 範例                   | 說明     |
 |----------------------|--------|
-| git reset –hard HEAD | 還原到最前面 |
-| git reset sort HEAD  |        |
+| git reset --sort HEAD  |        |
+| git reset –-hard HEAD | 還原到最前面 |
+
 
 ### 語法結構
 

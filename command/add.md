@@ -4,8 +4,8 @@
 
 | 範例                 | 說明  |
 |--------------------|-----|
-| git add .          |     |
 | git add README.txt |     |
+| git add .          | 將資料先暫存到 staging area  |
 
 ### 語法結構
 

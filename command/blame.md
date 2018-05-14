@@ -1,13 +1,17 @@
 # git blame 指令
 
+### 使用情境
+
+* 追蹤 bug，查看這行程式誰的。
+
 ### 常用範例
 
-| 範例                         | 說明  |
-|----------------------------|-----|
-| git blame -L 2,5 hello.txt |     |
-| git blame -L 2 hello.txt   |     |
-| git blame -L 2, hello.txt  |     |
-| git blame -L ,5 hello.txt  |     |
+| 範例                         | 說明     |
+|----------------------------|--------|
+| git blame -L 2,5 hello.txt |        |
+| git blame -L 2 hello.txt   |        |
+| git blame -L 2, hello.txt  |        |
+| git blame -L ,5 hello.txt  | 追蹤修改紀錄 |
 
 ### 語法結構
 

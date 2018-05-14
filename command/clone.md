@@ -2,10 +2,11 @@
 
 ### 常用範例
 
-| 範例                                    | 說明  |
-|---------------------------------------|-----|
-| git clone ~/remote-repo               |     |
-| git clone ~/remote-repo alincode-repo |     |
+| 範例                                    | 說明     |
+|---------------------------------------|--------|
+| git clone ~/remote-repo alincode-repo |        |
+| git clone ~/remote-repo               | 複製遠端容器 |
+
 
 ### 語法結構
 

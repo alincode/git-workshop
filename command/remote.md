@@ -2,13 +2,13 @@
 
 ### 常用範例
 
-| 範例                                                          | 說明  |
-|-------------------------------------------------------------|-----|
-| git remote                                                  |     |
-| git remote -v                                               |     |
-| git remote add origin http://git.example.com.tw/project.git |     |
-| git remote rename origin origin2                            |     |
-| git remote rm origin2                                       |     |
+| 範例                                                     | 說明                |
+|--------------------------------------------------------|-------------------|
+| git remote                                             |                   |
+| git remote -v                                          |                   |
+| git remote add origin http://git.xx.com.tw/project.git |                   |
+| git remote rename origin origin2                       |                   |
+| git remote rm origin2                                  | 刪除叫 origin2 的遠端聯繫 |
 
 ### 語法結構
 

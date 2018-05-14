@@ -37,14 +37,3 @@ bb9e55860a20ae3a1c441d5e2d8a5e0261a3f2ff
 100644 blob aff6388cffe192b412dfca52ddeee7a7ebd8961e    hello.txt
 100644 blob 14be0d41c639d701e0fe23e835b5fe9524b4459d    hello2.txt
 ```
-
-### 名稱
-
-* 絕對名稱
-* 參照名稱
-
-```
-refs/head
-refs/remotes
-refs/tags
-```
