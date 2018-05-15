@@ -3,10 +3,13 @@
 * 重新指定位置
 * 修改內容的歷史記錄會接在要合併的分支後面，合併後的歷史記錄會比較清楚簡單，但是會比使用 merge 更容易發生衝突。
 
+### 注意事項
+
+* 僅適用於還沒公開發佈的送交紀錄
 ### 使用情境
 
-* 可進行重新排序、編輯、移除、擠壓、拆散提交
-* 僅適用於還沒發佈的送交紀錄
+* 重新指定送交的基礎位置
+* 將歷史紀錄進行重新排序、編輯、移除、壓縮、拆散送交
 
 ### 優點
 
@@ -18,13 +21,60 @@
 * 移動的commit若屬於多個分支，則每個分支都要重新指定位置。
 * 經常無法自動合併成功的情況，一直得手動排除衝突，過度追求線圖的清晰，反而失去 Git 的部分優點。
 
+### 選擇用 merge 還是 rebase?
+
+需要保留樹狀記錄就用 merge，反之用 rebase
+
 ### 常用範例
 
-| 範例                   | 說明                                                                                                  |
-|----------------------|-----------------------------------------------------------------------------------------------------|
-| git rebase master    |                                                                                                     |
-| git rebase –abort    | 如果執行 rebase 指令後出現衝突的情況，可以使用這個指令取消 rebase 的操作。 Git repo 會恢復到還沒有執行 rebase 之前的狀態。                      |
-| git rebase –continue | 執行rebase 指令後出現衝突的情況，而且我們己經編輯好發生衝突的文件，接著就可以執行 `git add` 指令， 把新的修改內容加入 Git 索引中，最後再執行這個指令，完成rebase的操作。 |
+| 範例                   | 說明                 |
+|----------------------|--------------------|
+| git rebase master    |                    |
+| git rebase –abort    | 取消 rebase          |
+| git rebase –continue | 解決衝突後，繼續rebase     |
+| git rebase -skip     | 忽略 rebase 的 commit |
+| git rebase -i HEAD^^ | 互動模式 rebase        |
+
+* –continue：執行rebase 指令後出現衝突的情況，而且我們己經編輯好發生衝突的文件，接著就可以執行 `git add` 指令， 把新的修改內容加入 Git 索引中，最後再執行這個指令，完成rebase的操作。
+* –abort：如果執行 rebase 指令後出現衝突的情況，可以使用這個指令取消 rebase 的操作。 Git repo 會恢復到還沒有執行 rebase 之前的狀態。
+* -skip：忽略一個原本要rebase的commit
+### 重新指定送交的基礎位置
+
+![](assets/rebase_step1.png)
+
+#### git rebase master
+
+![](assets/rebase_step2.png)
+
+#### git merge dev
+
+![](assets/rebase_step3.png)
+
+![](assets/rebase_step4.png)
+
+### 合併 commit
+
+#### Step1
+
+```
+git rebase HEAD^^
+// or
+git rebase -i 129e0c8
+```
+
+![](assets/rebase_i1.png)
+
+#### Step2
+
+![](assets/rebase_i2.png)
+
+#### Step3
+
+![](assets/rebase_i3.png)
+
+#### Step4
+
+![](assets/rebase_i4.png)
 
 ### 語法結構
 

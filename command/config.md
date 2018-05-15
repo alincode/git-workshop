@@ -19,17 +19,18 @@ Config file location
 
 ### 常用範例
 
-| 範例                                                          | 說明         |
-|-------------------------------------------------------------|------------|
-| git config l                                                | 列出所有設定值    |
-| git config push.default matching                            |            |
-| git config --global user.name "demo_user"                   |            |
-| git config --global user.email "demo_user@demo.com"         |            |
-| git config --local user.name "demo_user"                    | 設定名稱       |
-| git config --local user.email "demo_user@demo.com"          | 設定信箱       |
-| git config alias.tree "log --oneline --decorate --graph"    | 設定 tree 暱稱 |
-| git config alias.l "log --all --decorate --graph --oneline" | 設定 l 暱稱    |
-| git config core.editor "vim"                                | 修改預設編輯器    |
+| 範例                                                          | 說明             |
+|-------------------------------------------------------------|----------------|
+| git config l                                                | 列出所有設定值        |
+| git config push.default matching                            |                |
+| git config --global user.name "demo_user"                   |                |
+| git config --global user.email "demo_user@demo.com"         |                |
+| git config --local user.name "demo_user"                    | 設定名稱           |
+| git config --local user.email "demo_user@demo.com"          | 設定信箱           |
+| git config alias.co "checkout"                              | 設定 checkout 暱稱 |
+| git config alias.tree "log --oneline --decorate --graph"    | 設定 tree 暱稱     |
+| git config alias.l "log --all --decorate --graph --oneline" | 設定 l 暱稱        |
+| git config core.editor "vim"                                | 修改預設編輯器        |
 
 ### 推薦設定的 alias
 
