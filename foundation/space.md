@@ -1,6 +1,6 @@
 # 工作區、暫存區、儲存庫
 
-![](assests/local-with-remote.jpg)
+![](assets/local-with-remote.jpg)
 
 | 檔案階段 | 檔案所在位置                   | 說明          |
 |------|--------------------------|-------------|

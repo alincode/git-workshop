@@ -8,7 +8,8 @@
 | 範例                        | 說明                                             |
 |---------------------------|------------------------------------------------|
 | git push origin master -u | 從本地端的 master branch 上傳到 origin 的 master branch |
-| git push origin master    | 發佈                                             |
+| git push origin master    | 發佈 master                                      |
+| git push origin v0.0.1    | 發佈標籤                                           |
 
 ### 語法結構
 

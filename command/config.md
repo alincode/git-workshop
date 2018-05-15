@@ -1,5 +1,17 @@
 # 設定檔
 
+
+### 設定檔的位置
+
+```
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+```
+
+* git config --global 的設定內容會被寫入 ~/.gitconfig
+* git config 的設定會被寫入 .git/config
 ### 編輯設定檔的方式
 
 * `vi .git/config`
@@ -28,7 +40,6 @@ alias.st=status
 alias.pl=pull
 alias.ps=push
 alias.df=diff
-alias.l=log --all --decorate --graph --oneline
 alias.br=branch
 alias.ap=add -p
 alias.aa=add .
@@ -38,7 +49,8 @@ alias.ss=stash
 alias.spp=stash pop
 alias.sdd=stash drop
 alias.rb=rebase
-alias.dev=rebase origin/develop develop
+alias.type=cat-file -t
+alias.dump=cat-file -p
 alias.clear=remote prune origin
 alias.tree=log --oneline --decorate --graph
 alias.cm=commit

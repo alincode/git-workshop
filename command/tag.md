@@ -11,9 +11,9 @@
 | 範例                     | 說明     |
 |------------------------|--------|
 | git tag                |        |
+| git rev-parse v0.0.1   |        |
 | git tag v0.0.1 sha1234 | 新增 tag |
 | git tag -d v0.0.1      | 刪除 tag |
-| git rev-parse v0.0.1   |        |
 
 
 ```
