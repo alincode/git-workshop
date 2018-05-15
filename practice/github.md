@@ -5,4 +5,4 @@
 * 練習題：新增一個 ISSUE
 * 練習題：Fork 一個專案
 * 練習題：發一個 Pull Rquest (PR)
-* 練習題：僅行代碼審查 Code Review
+* 練習題：進行代碼審查 Code Review
