@@ -21,6 +21,7 @@ git pull-request -m "Implemented feature X" -b defunkt:master -h mislav:feature
 ![](assets/pr_history.png)
 
 
+<!-- 
 ### 用 cli 發 PR
 
 * brew install hub
@@ -34,4 +35,4 @@ function pr() {
     fi
     hub pull-request -b team:"$base" -h team:`git rev-parse --abbrev-ref HEAD`;
 }
-```
+``` -->

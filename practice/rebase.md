@@ -1,5 +1,7 @@
 # rebase 練習題
 
+<!-- 開一個新的 repo 不要共用 -->
+
 ### 1. 情境：重新指定送交的基礎位置
 
 #### Step1
@@ -214,3 +216,26 @@ git rebase --onto 6b193ca bac0cfe
 ```
 
 ![](assets/rebase_mistake2.png)
+
+### 6. rebase 衝突
+
+```
+echo "Hello World" >> README.md && git add . && git commit -m 'init'
+echo "1" >> m1.md && git add . && git commit -m 'm1'
+git branch hotfix/issue-1
+vi m1.md
+
+git add . && git commit -m 'hotfix update'
+git checkout master
+
+vi m1.md
+git add . && git commit -m 'master update'
+git checkout hotfix/issue-1
+git rebase master
+git diff
+vi m1.md
+git diff
+git add .
+git commit
+git rebase --continue
+```

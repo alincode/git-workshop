@@ -11,8 +11,9 @@
 ### SVN
 
 * 不能在離線狀態 commit
+* 只要 commit 多的時候，查看 log 容易 timeout
+* 很容易發生衝突，甚至只要檔案重新命名，SVN 就認不出來了。
 * Squashed commit 壓縮成只有一個 merge-commit，不會有被合併的 log。
-
 
 ### transport
 
