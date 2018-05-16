@@ -2,11 +2,15 @@
 
 ### Git
 
+* 可以在離線狀態 commit
+* 非常快速
+* 數不清的新功能
 * Straight merge 預設的合併模式，會有全部的被合併的 branch commits 記錄加上一個 merge-commit，看線圖會有兩條 Parents 線，並保留所有 commit log。
 
 
 ### SVN
 
+* 不能在離線狀態 commit
 * Squashed commit 壓縮成只有一個 merge-commit，不會有被合併的 log。
 
 

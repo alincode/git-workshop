@@ -1,6 +1,11 @@
 # git branch CRUD
 
-git branch --all                                                                                                                                ```
+![](https://git-scm.com/book/en/v2/images/topic-branches-1.png)
+[圖片來源 - git-scm.com](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
+
+git branch --all
+
+```
 * master
   remotes/origin/HEAD -> origin/master
   remotes/origin/master

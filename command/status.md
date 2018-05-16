@@ -15,6 +15,8 @@
 
 ![](assets/status.png)
 
+<!-- 這裡指的是 staged 跟 stash 是不同的歐，不要看錯了 -->
+
 ### 檔案分類
 
 * 被追蹤

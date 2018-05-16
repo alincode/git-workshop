@@ -1,6 +1,5 @@
 # 設定檔
 
-
 ### 設定檔的位置
 
 ```
@@ -12,10 +11,15 @@ Config file location
 
 * git config --global 的設定內容會被寫入 ~/.gitconfig
 * git config 的設定會被寫入 .git/config
+
 ### 編輯設定檔的方式
 
 * `vi .git/config`
 * 使用 `git config` 指令
+
+### 注意事項
+
+* --global 參數比需要緊接著 git config
 
 ### 常用範例
 
