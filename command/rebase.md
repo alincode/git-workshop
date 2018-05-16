@@ -1,6 +1,6 @@
 # git rebase 指令
 
-* 重新指定位置
+* 重新指定位置 (整形)
 * 修改內容的歷史記錄會接在要合併的分支後面，合併後的歷史記錄會比較清楚簡單，但是會比使用 merge 更容易發生衝突。
 
 ### 注意事項
@@ -24,59 +24,35 @@
 
 ### 選擇用 merge 還是 rebase?
 
-需要保留樹狀記錄就用 merge，反之用 rebase
+需要保留樹狀記錄就用 merge，反之則用 rebase。
 
 ### 常用範例
 
-| 範例                   | 說明                 |
-|----------------------|--------------------|
-| git rebase master    |                    |
-| git rebase –abort    | 取消 rebase          |
-| git rebase –continue | 解決衝突後，繼續rebase     |
-| git rebase -skip     | 忽略 rebase 的 commit |
-| git rebase -i HEAD^^ | 互動模式 rebase        |
+| 範例                                                        | 說明                 |
+|-----------------------------------------------------------|--------------------|
+| git rebase --onto <new base-commit> <current base-commit> | 指定要從哪裡開始           |
+| git rebase master                                         |                    |
+| git rebase –abort                                         | 取消 rebase          |
+| git rebase –continue                                      | 解決衝突後，繼續rebase     |
+| git rebase -skip                                          | 忽略 rebase 的 commit |
+| git rebase -i HEAD^^                                      | 互動模式 rebase        |
 
 * –continue：執行rebase 指令後出現衝突的情況，而且我們己經編輯好發生衝突的文件，接著就可以執行 `git add` 指令， 把新的修改內容加入 Git 索引中，最後再執行這個指令，完成rebase的操作。
 * –abort：如果執行 rebase 指令後出現衝突的情況，可以使用這個指令取消 rebase 的操作。 Git repo 會恢復到還沒有執行 rebase 之前的狀態。
 * -skip：忽略一個原本要rebase的commit
-### 重新指定送交的基礎位置
 
-![](assets/rebase_step1.png)
-
-#### git rebase master
-
-![](assets/rebase_step2.png)
-
-#### git merge dev
-
-![](assets/rebase_step3.png)
-
-![](assets/rebase_step4.png)
-
-### 合併 commit
-
-#### Step1
+### 互動模式
 
 ```
-git rebase HEAD^^
-// or
-git rebase -i 129e0c8
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
 ```
-
-![](assets/rebase_i1.png)
-
-#### Step2
-
-![](assets/rebase_i2.png)
-
-#### Step3
-
-![](assets/rebase_i3.png)
-
-#### Step4
-
-![](assets/rebase_i4.png)
-
 ### 語法結構
 
 ```

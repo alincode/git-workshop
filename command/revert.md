@@ -33,3 +33,29 @@ usage: git revert [<options>] <commit-ish>...
     -S, --gpg-sign[=<key-id>]
                           GPG sign commit
 ```
+
+### 練習題
+
+情境：還原某一個已經發佈的 commit
+
+```
+echo "Hello World" >> README.md && git add . && git commit -m 'init'
+echo "1" >> 1.md && git add . && git commit -m 'c1'
+echo "2" >> 2.md && git add . && git commit -m 'c2'
+echo "3" >> 3.md && git add . && git commit -m 'c3'
+git reflog
+```
+
+output:
+
+```
+3f1e27b HEAD@{0}: commit: c3
+e15d462 HEAD@{1}: commit: c2
+d9968dd HEAD@{2}: commit: c1
+106cbc4 HEAD@{3}: commit (initial): init
+```
+
+```
+git revert HEAD@{1}
+git log --oneline
+```
