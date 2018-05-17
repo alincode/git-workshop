@@ -29,7 +29,7 @@
 * –all：顯示所有分支的commit紀錄。
 * –decorate：表示要標示分支的名稱。
 
-git log \^[commitA] # A 之後的提交(不列出 A 之前的提交，不含 A)
+<!-- git log \^[commitA] # A 之後的提交(不列出 A 之前的提交，不含 A) -->
 git log -[num] # 最近[num]筆的提交紀錄
 
 ### 語法結構

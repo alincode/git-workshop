@@ -11,6 +11,7 @@ git branch --all
   remotes/origin/master
 ```
 
+<!-- 
 ### 名稱
 
 * 絕對名稱
@@ -20,7 +21,8 @@ git branch --all
 refs/head
 refs/remotes
 refs/tags
-```
+``` 
+-->
 
 ### 常用範例
 

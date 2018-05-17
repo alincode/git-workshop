@@ -1,6 +1,6 @@
 # 練習題：reset
 
-### 情境：將新增並已加入索引的檔案，還原到沒加入索引之前
+### 1. 情境：將新增並已加入索引的檔案，還原到沒加入索引之前
 
 ![](../command/assets/status.png)
 
@@ -12,7 +12,7 @@
 1. 透過 `git reset HEAD README2.md` 指令，將檔案變成 Unstaged (移除索引)。
 
 
-### 情境：重新 commit，並讓不該存在的檔案消失
+### 2. 情境：重新 commit，並讓不該存在的檔案消失
 
 ![](../command/assets/git_reset.png)
 

@@ -77,7 +77,10 @@ Merge branch 'dev'
 
 #### find .git
 
-
+* object：實際儲存檔案內容的位置
+* hook
+* logs：分支的 commit 紀錄
+* refs：分支的最後一筆 commit sha code
 ```
 .git/objects/af
 .git/objects/af/f6388cffe192b412dfca52ddeee7a7ebd8961e

@@ -35,7 +35,7 @@
   * [觀念解說：解決衝突](foundation/conflict.md)
   * [練習題：conflict 解決衝突](practice/conflict.md)
   * [暫存 stash](command/stash.md)
-  * [練習題：將檔案放入暫存區](practice/stash.md)
+  * [練習題：stash](practice/stash.md)
 * [修改送交]()
   * [還原 reset](command/reset.md)
   * [練習題：reset](practice/reset.md)
