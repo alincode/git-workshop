@@ -2,7 +2,6 @@
 
 ### 新增空的資料夾
 
-
 ```
 # 新增一個空的資料夾
 mkdir docs && cd docs
@@ -24,8 +23,10 @@ git ls-files -d | xargs git checkout —
 
 若你不小心移除了分支或是其他參照，你可以使用 `git reflog` 指令來還原。
 
+<!-- 
 ### 快速尋找臭蟲
 
 * 善用 grep
 * 善用 blame 文件逐行追溯
 * 善用 bisect 二分查找
+-->

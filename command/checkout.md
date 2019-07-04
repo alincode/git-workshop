@@ -16,6 +16,25 @@ checkout 可用於將特定版本檔案取出，無論是資料夾或檔案皆�
 | git checkout -b dev       | 新增 dev 分支，並同時切換到 dev 分之上      |
 | git checkout -- README.md | 將 README.md 恢復到上一次 Commit 的狀態 |
 
+### 練習題：還原尚未 commit 的最新的變動
+
+1. 編輯 README.md
+1. 透過 `git checkout -- README.md` 指令，還原修改的內容
+
+<!--
+答案：
+
+### step1
+
+echo "Hello World" >> README.md && git add . && git commit -m 'init'
+echo "alincode" >> README.md
+
+
+### step2
+
+git checkout -- README.md
+-->
+
 ### 語法結構
 
 ```

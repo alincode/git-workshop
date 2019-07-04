@@ -11,13 +11,10 @@
 ### 語法結構
 
 ```
-usage: git [--version] [--help] [-C <path>] [-c name=value]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           <command> [<args>]
-user@ubuntu-xenial:~/workspace/git-sample/alincode-hello$ git
-usage: git [--version] [--help] [-C <path>] [-c name=value]
+> git
+
+
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
            [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
            [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
@@ -48,7 +45,7 @@ grow, mark and tweak your common history
    commit     Record changes to the repository
    diff       Show changes between commits, commit and working tree, etc
    merge      Join two or more development histories together
-   rebase     Forward-port local commits to the updated upstream head
+   rebase     Reapply commits on top of another base tip
    tag        Create, list, delete or verify a tag object signed with GPG
 
 collaborate (see also: git help workflows)
@@ -59,4 +56,10 @@ collaborate (see also: git help workflows)
 'git help -a' and 'git help -g' list available subcommands and some
 concept guides. See 'git help <command>' or 'git help <concept>'
 to read about a specific subcommand or concept.
+```
+
+### 補充
+
+```sh
+git help tutorial
 ```
