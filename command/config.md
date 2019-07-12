@@ -2,39 +2,34 @@
 
 ### 設定檔的位置
 
-```
-Config file location
-    --global              use global config file
-    --system              use system config file
-    --local               use repository config file
-```
+參數      | 寫入的檔案位置   | 說明
+-------- | -------------- | -----------------------
+--system | /etc/gitconfig | 對系統中所有使用者配置
+--global | ~/.gitconfig   | use global config file
+--local  | .git/config    | use repository config file
 
-* git config --global 的設定內容會被寫入 ~/.gitconfig
-* git config 的設定會被寫入 .git/config
+編輯設定檔的方式有兩種
 
-### 編輯設定檔的方式
+1. 使用 `git config` 指令
+1. 直接編輯設定檔，例如：`vi .git/config`
 
-* `vi .git/config`
-* 使用 `git config` 指令
-
-### 注意事項
-
-* --global 參數比需要緊接著 git config
 
 ### 常用範例
 
 | 範例                                                          | 說明               |
 |-------------------------------------------------------------|------------------|
-| git config l                                                | 列出所有設定值          |
-| git config push.default matching                            | 預設發佈到相同分支名稱的遠端分支 |
-| git config --global user.name "demo_user"                   |                  |
-| git config --global user.email "demo_user@demo.com"         |                  |
-| git config --local user.name "demo_user"                    | 設定名稱             |
-| git config --local user.email "demo_user@demo.com"          | 設定信箱             |
-| git config alias.co "checkout"                              | 設定 checkout 暱稱   |
-| git config alias.tree "log --oneline --decorate --graph"    | 設定 tree 暱稱       |
-| git config alias.l "log --all --decorate --graph --oneline" | 設定 l 暱稱          |
-| git config core.editor "vim"                                | 修改預設編輯器          |
+| git config l                                         | 列出所有設定值          |
+| git config push.default matching                     | 預設發佈到相同分支名稱的遠端分支 |
+| git config --global user.name "demo_user"            | 設定全域層級的使用者名稱 |
+| git config --global user.email "demo_user@demo.com"  | 設定全域層級的使用者信箱 |
+| git config --local user.name "demo_user"             | 設定儲存庫層級的使用者名稱     |
+| git config --local user.email "demo_user@demo.com"   | 設定儲存庫層級的使用者信箱     |
+| git config alias.co "checkout"                       | 設定 checkout 暱稱   |
+| git config --global alias.l "log --graph --oneline"  | 設定 l 暱稱          |
+| git config --global alias.ls 'log --graph --pretty=format:"%h <%an> %ar || %s"' | 設定 ls 暱稱          |
+| git config core.editor "vim"                         | 修改預設編輯器        |
+
+> 注意：--global 參數比需要緊接著 git config，移到最後面的話，是沒有作用的
 
 ### 推薦設定的 alias
 

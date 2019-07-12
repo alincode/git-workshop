@@ -16,7 +16,9 @@ checkout 可用於將特定版本檔案取出，無論是資料夾或檔案皆�
 | git checkout -b dev       | 新增 dev 分支，並同時切換到 dev 分之上      |
 | git checkout -- README.md | 將 README.md 恢復到上一次 Commit 的狀態 |
 
-### 練習題：還原尚未 commit 的最新的變動
+### 練習題
+
+還原尚未 commit 的最新的變動
 
 1. 編輯 README.md
 1. 透過 `git checkout -- README.md` 指令，還原修改的內容
@@ -34,6 +36,31 @@ echo "alincode" >> README.md
 
 git checkout -- README.md
 -->
+
+### 情境練習
+
+再進行切換分支時，目前分支仍然有還沒有 comment 的修改待 comment。
+
+```
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   b.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+```
+$ git checkout dev
+error: Your local changes to the following files would be overwritten by checkout:
+	b.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+$
+```
 
 ### 語法結構
 

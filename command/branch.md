@@ -1,4 +1,4 @@
-# git branch CRUD
+# git 分支 CRUD
 
 ![](https://git-scm.com/book/en/v2/images/topic-branches-1.png)
 [圖片來源 - git-scm.com](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
@@ -10,6 +10,11 @@ git branch --all
   remotes/origin/HEAD -> origin/master
   remotes/origin/master
 ```
+
+### 為什麼我們需要分支 (branch)
+
+* 快速試錯
+* 切換半成品
 
 <!-- 
 ### 名稱
@@ -28,11 +33,11 @@ refs/tags
 
 | 範例                     | 說明                        |
 |------------------------|---------------------------|
-| git branch dev         | 新增 dev 分支                 |
+| git branch dev         | 新增目前位置的 dev 分支                 |
 | git branch             | 列出 local 分支               |
 | git branch -r          | 列出遠端分支                    |
 | git branch -a          | 列出所有分支                    |
-| git branch -m dev dev2 | 修改分支名稱                    |
+| git branch -m dev dev2 | 更改分支名稱                    |
 | git branch -d dev2     | 刪除分支                      |
 | git branch -D dev2     | 強迫刪除分支 (即使分支，還沒被 merge 過) |
 

@@ -1,11 +1,10 @@
 # git pull 指令
 
-拉回遠端 repo 最新版送交歷史紀錄到本地端 repo
+拉回遠端 repo 最新版送交歷史紀錄，並 merge 到本地端 repo
 
-* clone vs pull
-* git pull =  git fetch + git merge
+git pull = git fetch + git merge
 
-![](../foundation/assets/local-with-remote.jpg)
+![](assets/pull-vs-fetch.png)
 
 ### 常用範例
 

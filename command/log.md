@@ -20,7 +20,6 @@
 | git log --author="alincode"                                        | 只查看特定人的送交紀錄         |
 | git log -p hello.js                                                |                     |
 | git log --follow README.md                                         | 列出包含該檔案變動的提交(包含改名前) |
-| git log --oneline --abbrev-commit --all --graph --decorate --color |                     |
 | git log --graph --oneline --all --decorate                         | 顯示所有分之並圖形化          |
 | git log --since="1 weeks ago"                                      | 一週內的 log            |
 
