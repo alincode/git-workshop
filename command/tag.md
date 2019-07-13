@@ -21,12 +21,13 @@ v0.0.1
 
 ### 常用範例
 
-| 範例                     | 說明     |
-|------------------------|--------|
-| git tag                |        |
-| git rev-parse v0.0.1   |        |
-| git tag v0.0.1 sha1234 | 新增 tag |
-| git tag -d v0.0.1      | 刪除 tag |
+| 範例                               | 說明       |
+|-----------------------------------|------------|
+| git tag                           |            |
+| git rev-parse v0.0.1              |            |
+| git tag v0.0.1 sha1234            | 新增 tag    |
+| git tag -d v0.0.1                 | 刪除 tag    |
+| git push origin :refs/tags/v0.0.1 | 刪除遠端 tag |
 
 
 ```

@@ -13,6 +13,7 @@
 #### merge 之前
 
 ![](assets/before-fast-forward.png)
+
 #### merge 之後
 
 ![](assets/fast-forward.png)
@@ -25,15 +26,14 @@ git merge dev —-no-ff
 
 ![](assets/noff.png)
 
-#### 使用情境
+**使用情境**
 
 * 在開發一個功能時，通常都會開一支新的分支，使用 --no-ff 可以讓成員在日後可以很清楚辨識不同的功能，所包含的送交歷史紀錄有哪些。
 * GitHub merge pull request 的策略，也是使用 --no-ff ，也是讓開發者可以方便辨別。
 
-#### 缺點
+**缺點**
 
 * 即使一個很小的修改，也會拉出一條支線圖。
-
 
 ### 常用範例
 

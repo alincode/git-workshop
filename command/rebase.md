@@ -1,11 +1,9 @@
 # git rebase 指令
 
-* 重新指定位置 (整形)
+* 重新指定位置 (整形？拉皮？)
 * 修改內容的歷史記錄會接在要合併的分支後面，合併後的歷史記錄會比較清楚簡單，但是會比使用 merge 更容易發生衝突。
 
-### 注意事項
-
-* 僅適用於還沒公開發佈的送交紀錄 (須謹慎使用)
+> 注意事項：僅適用於還沒公開發佈的送交紀錄 (須謹慎使用)
 
 ### 使用情境
 
@@ -28,18 +26,20 @@
 
 ### 常用範例
 
-| 範例                                                        | 說明                 |
+| 範例                                                        | 說明              |
 |-----------------------------------------------------------|--------------------|
-| git rebase --onto <new base-commit> <current base-commit> | 指定要從哪裡開始           |
+| git rebase --onto <new base-commit> <current base-commit> | 指定要從哪裡開始      |
 | git rebase master                                         |                    |
 | git rebase –abort                                         | 取消 rebase          |
-| git rebase –continue                                      | 解決衝突後，繼續rebase     |
+| git rebase –continue                                      | 解決衝突後，繼續rebase |
 | git rebase -skip                                          | 忽略 rebase 的 commit |
 | git rebase -i HEAD^^                                      | 互動模式 rebase        |
 
 * –continue：執行rebase 指令後出現衝突的情況，而且我們己經編輯好發生衝突的文件，接著就可以執行 `git add` 指令， 把新的修改內容加入 Git 索引中，最後再執行這個指令，完成rebase的操作。
 * –abort：如果執行 rebase 指令後出現衝突的情況，可以使用這個指令取消 rebase 的操作。 Git repo 會恢復到還沒有執行 rebase 之前的狀態。
 * -skip：忽略一個原本要rebase的commit
+
+![](assets/rebase.png)
 
 ### 互動模式
 

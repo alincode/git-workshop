@@ -31,21 +31,18 @@ refs/tags
 
 ### 常用範例
 
-| 範例                     | 說明                        |
-|------------------------|---------------------------|
-| git branch dev         | 新增目前位置的 dev 分支                 |
-| git branch             | 列出 local 分支               |
-| git branch -r          | 列出遠端分支                    |
-| git branch -a          | 列出所有分支                    |
-| git branch -m dev dev2 | 更改分支名稱                    |
-| git branch -d dev2     | 刪除分支                      |
-| git branch -D dev2     | 強迫刪除分支 (即使分支，還沒被 merge 過) |
-
-### 相關聯指令
-
-| 範例                  | 說明        |
-|---------------------|-----------|
-| git push origin dev | 發佈 dev 分支 |
+| 範例                          | 說明                                |
+|------------------------------|-------------------------------------|
+| git branch dev               | 新增目前位置的 dev 分支                |
+| git branch                   | 列出 local 分支                      |
+| git branch -r                | 列出遠端分支                          |
+| git branch -a                | 列出所有分支                          |
+| git branch -m dev dev2       | 更改分支名稱                          |
+| git branch -d dev2           | 刪除分支                             |
+| git branch -D dev2           | 強迫刪除分支 (即使分支，還沒被 merge 過) |
+| git git push origin dev      | 發佈 dev 分支                        |
+| git push origin --delete dev | 刪除遠端分支                          |
+| git remote prune origin      |  刪除 remote 底下所有過時的分支         |
 
 ### 語法結構
 

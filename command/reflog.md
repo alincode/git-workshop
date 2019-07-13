@@ -10,12 +10,23 @@
 
 | 範例                                                      | 說明       |
 |---------------------------------------------------------|----------|
+| git reflog                                              | 列表更變軌跡 |
 | git config --global gc.reflogExpire "never"             |          |
 | git config --global gc.reflogExpireUnreachable "never"  |          |
 | git config --global gc.reflogExpire "7 days"            |          |
 | git config --global gc.reflogExpireUnreachable "7 days" |          |
 | git reflog delete HEAD@{2}                              | 刪除更變軌跡   |
-| git reflog                                              | 列表更變軌跡 |
+
+### ORIG_HEAD
+
+紀錄危險操作之前的 HEAD 位置。
+
+```
+git rebase dev
+
+# 回到 rebase dev 之前的狀態
+git reset ORIG_HEAD --hard
+```
 
 ### 語法結構
 

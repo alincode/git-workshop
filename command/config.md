@@ -26,7 +26,8 @@
 | git config --local user.email "demo_user@demo.com"   | 設定儲存庫層級的使用者信箱     |
 | git config alias.co "checkout"                       | 設定 checkout 暱稱   |
 | git config --global alias.l "log --graph --oneline"  | 設定 l 暱稱          |
-| git config --global alias.ls 'log --graph --pretty=format:"%h <%an> %ar || %s"' | 設定 ls 暱稱          |
+| git config --global alias.ls 'log --graph --pretty=format:"%h <%an> %ar || %s"'          | 設定 ls 暱稱   |
+| git config --global alias.tree "log --graph --decorate --pretty=oneline --abbrev-commit" | 設定 tree 暱稱 |
 | git config core.editor "vim"                         | 修改預設編輯器        |
 
 > 注意：--global 參數比需要緊接著 git config，移到最後面的話，是沒有作用的

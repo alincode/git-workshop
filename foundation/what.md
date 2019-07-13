@@ -7,7 +7,12 @@
 
 ![](../foundation/assets/local-with-remote.jpg)
 
----
+### 補充
+
+```sh
+git help tutorial
+```
+
 ### 語法結構
 
 ```
@@ -56,10 +61,4 @@ collaborate (see also: git help workflows)
 'git help -a' and 'git help -g' list available subcommands and some
 concept guides. See 'git help <command>' or 'git help <concept>'
 to read about a specific subcommand or concept.
-```
-
-### 補充
-
-```sh
-git help tutorial
 ```

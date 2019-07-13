@@ -3,13 +3,29 @@
 ### 使用情境
 
 * 將本地端新增的送交紀錄，發佈至遠端
+
 ### 常用範例
 
-| 範例                        | 說明                                             |
+| 範例                        | 說明                                          |
 |---------------------------|------------------------------------------------|
-| git push origin master -u | 從本地端的 master branch 上傳到 origin 的 master branch |
-| git push origin master    | 發佈 master                                      |
-| git push origin v0.0.1    | 發佈標籤                                           |
+| git push origin master    | 發佈 master                                    |
+| git push origin v0.0.1    | 發佈標籤至遠端                                   |
+
+**設定 Upstream**
+
+參數 `-u` 等同於 `--set-upstream` (上游)，設定 upstream 可以使分支開始追蹤指定的遠端分支
+
+```sh
+git push --set-upstream origin master
+
+// 縮寫
+git push -u origin master
+```
+
+```
+git branch --set-upstream-to=github/master master
+git push
+```
 
 ### 語法結構
 
