@@ -29,6 +29,7 @@
   * [重新指向 reset](command/reset.md)
   * [重新定位 rebase](command/rebase.md)
   * [練習題 rebase](practice/rebase.md)
+  * [解 rebase 衝突](practice/rebase-conflict.md)
   * [反悔 revert](command/revert.md)
   * [觀念講解：reset vs revert](foundation/reset-vs-revert.md)
 * [特殊情境實用篇]()
