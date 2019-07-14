@@ -1,6 +1,6 @@
 # git clone 指令
 
-複製一份遠端專案至本地端
+複製一份遠端儲存庫至本地端
 
 ### 常用範例
 
@@ -10,7 +10,17 @@
 | git clone ~/remote-repo alincode-repo              | 複製遠端容器，並指定資料夾名稱 |
 | git clone ~/remote-repo                            | 複製遠端容器          |
 
+### 練習題：新增一個儲存庫
 
+![](assets/git_clone.png)
+
+```
+git clone git@github.com:webdriverio/webdriverio.git
+// or
+git clone https://github.com/webdriverio/webdriverio.git
+```
+
+---
 ### 語法結構
 
 ```

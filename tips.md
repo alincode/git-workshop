@@ -5,8 +5,9 @@
 ```
 # 新增一個空的資料夾
 mkdir docs && cd docs
-# 放一個名稱為 .gitkeeper 的檔案
-touch .gitkeeper
+
+# 放一個名稱為 .keep 的檔案
+touch .keep
 ```
 
 ### 挽救 rebase 或 reset 的失敗

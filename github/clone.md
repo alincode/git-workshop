@@ -1,6 +1,4 @@
-# Github clone
-
-### 新增一個儲存庫
+# Github 下載儲存庫
 
 ![](assets/git_clone.png)
 

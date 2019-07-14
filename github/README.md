@@ -1,33 +1,8 @@
 # Github
 
-Git Server Hosting
+GitHub 是原始碼代管服務平台，白話來說就是 Git Server 伺服器，除了 Github 之外，還有 <https://bitbucket.org> 或 <https://gitlab.com/> 可以選擇。
 
-<https://github.com/github/training-kit>
+截止到 2015 年，GitHub 已經有超過兩千八百萬註冊用戶和5700萬程式碼庫。事實上已經成為了世界上最大的程式碼存放網站和開源社群。
 
-![](assets/home_page.png)
+2018年6月4日，美國科技公司微軟宣佈以75億美元的股票收購GitHub。
 
-### Git 與 GitHub 的區別？
-
-### watch 追蹤
-
-* 會收到更變通知
-  * 郵件
-  * 快訊
-
-### star 給一個星星
-
-例如像 facebook 按「讚」
-
-### Fork
-
-fork 是發生在「整個容器」的階層上，branch 是發生在「單一容器」中。
-
-### 啟動保護機制
-
-切換到 Setting 下的 Branches 頁籤，點擊 add rule 按鈕
-
-![](assets/add-rule.png)
-
-設定
-
-![](assets/protect.png)

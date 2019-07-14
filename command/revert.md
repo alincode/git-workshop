@@ -15,6 +15,26 @@
 
 > 🤔 取消 revert？ 可以直接使用 `git reset HEAD^ --hard`
 
+### 情境題：什麼時候用 reset，什麼時候用 revert？
+
+**Reset**
+
+* 用在還未發佈的 commit
+* 直接修改舊的送交歷史紀錄，不會多增加一個新的節點。
+
+**Revert**
+
+* 用在還未發佈的 commit
+* 回到指定的 commit 節點的前一個節點的狀態，執行完畢後會新增一個 commit 節點。
+
+### 練習題：反悔一個已經發佈的送交紀錄
+
+```
+git revert HEAD
+git log --oneline
+```
+
+---
 ### 語法結構
 
 ```
@@ -35,30 +55,4 @@ usage: git revert [<options>] <commit-ish>...
                           option for merge strategy
     -S, --gpg-sign[=<key-id>]
                           GPG sign commit
-```
-
-### 練習題
-
-情境：還原某一個已經發佈的 commit
-
-```
-echo "Hello World" >> README.md && git add . && git commit -m 'init'
-echo "1" >> 1.md && git add . && git commit -m 'c1'
-echo "2" >> 2.md && git add . && git commit -m 'c2'
-echo "3" >> 3.md && git add . && git commit -m 'c3'
-git reflog
-```
-
-output:
-
-```
-3f1e27b HEAD@{0}: commit: c3
-e15d462 HEAD@{1}: commit: c2
-d9968dd HEAD@{2}: commit: c1
-106cbc4 HEAD@{3}: commit (initial): init
-```
-
-```
-git revert HEAD@{1}
-git log --oneline
 ```

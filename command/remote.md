@@ -7,9 +7,9 @@
 ### 常用範例
 
 | 範例                                                     | 說明                |
-|--------------------------------------------------------|-------------------|
-| git remote                                             | 顯示遠端來源名稱          |
-| git remote -v                                          | 顯示遠端來源詳細資訊        |
+|------------------------------------------------------|-------------------|
+| git remote                                           | 顯示遠端來源名稱          |
+| git remote -v                                        | 顯示遠端來源詳細資訊        |
 | git remote add origin http://git.xx.com.tw/project.git | 加入遠端來源            |
 | git remote rename origin origin2                       | 修改遠端來源的名字         |
 | git remote rm origin2                                  | 刪除叫 origin2 的遠端連接 |
