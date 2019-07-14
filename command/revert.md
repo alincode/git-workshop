@@ -8,9 +8,12 @@
 
 ### 常用範例
 
-| 範例              | 說明               |
-|-----------------|------------------|
-| git revert HEAD | 回到前一次 commit 的狀態 |
+| 範例                       | 說明                  |
+|---------------------------|-----------------------|
+| git revert HEAD           | 回到前一次 commit 的狀態 |
+| git revert HEAD --no-edit | 不編輯 commit 訊息      |
+
+> 取消 revert？ 可以直接使用 `git reset HEAD^ --hard`
 
 ### 語法結構
 

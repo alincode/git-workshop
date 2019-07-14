@@ -10,6 +10,7 @@
 |---------------------------|------------------------------------------------|
 | git push origin master    | 發佈 master                                    |
 | git push origin v0.0.1    | 發佈標籤至遠端                                   |
+| git push origin :dev      | 刪除遠端 dev 分支                                |
 
 **設定 Upstream**
 
@@ -26,6 +27,8 @@ git push -u origin master
 git branch --set-upstream-to=github/master master
 git push
 ```
+
+### 情境：有時候 push 不上去
 
 ### 語法結構
 

@@ -34,6 +34,7 @@ refs/tags
 | 範例                          | 說明                                |
 |------------------------------|-------------------------------------|
 | git branch dev               | 新增目前位置的 dev 分支                |
+| git branch dev sha1234       | 新增指定位置的 dev 分支                |
 | git branch                   | 列出 local 分支                      |
 | git branch -r                | 列出遠端分支                          |
 | git branch -a                | 列出所有分支                          |

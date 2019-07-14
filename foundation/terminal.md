@@ -20,6 +20,9 @@ cls | clear | 清除畫面上的內容
 # 檔案列表
 ls -l
 
+# 檔案列表，包含隱藏檔
+ls -l
+
 # 建立檔案
 touch a.txt
 

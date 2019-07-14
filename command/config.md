@@ -16,19 +16,17 @@
 
 ### 常用範例
 
-| 範例                                                          | 說明               |
-|-------------------------------------------------------------|------------------|
-| git config l                                         | 列出所有設定值          |
-| git config push.default matching                     | 預設發佈到相同分支名稱的遠端分支 |
-| git config --global user.name "demo_user"            | 設定全域層級的使用者名稱 |
-| git config --global user.email "demo_user@demo.com"  | 設定全域層級的使用者信箱 |
-| git config --local user.name "demo_user"             | 設定儲存庫層級的使用者名稱     |
-| git config --local user.email "demo_user@demo.com"   | 設定儲存庫層級的使用者信箱     |
-| git config alias.co "checkout"                       | 設定 checkout 暱稱   |
-| git config --global alias.l "log --graph --oneline"  | 設定 l 暱稱          |
-| git config --global alias.ls 'log --graph --pretty=format:"%h <%an> %ar || %s"'          | 設定 ls 暱稱   |
-| git config --global alias.tree "log --graph --decorate --pretty=oneline --abbrev-commit" | 設定 tree 暱稱 |
-| git config core.editor "vim"                         | 修改預設編輯器        |
+| 範例                                                  | 說明                  |
+|------------------------------------------------------|-----------------------|
+| git config --list                                    | 列出所有設定值          |
+| git config --global user.name "demo_user"            | 設定全域層級的使用者名稱  |
+| git config --global user.email "demo_user@demo.com"  | 設定全域層級的使用者信箱  |
+| git config --local user.name "demo_user"             | 設定儲存庫層級的使用者名稱 |
+| git config --local user.email "demo_user@demo.com"   | 設定儲存庫層級的使用者信箱 |
+| git config alias.st "status"                       | 設定 status 暱稱      |
+| git config --global alias.l "log --graph --oneline"  | 在全域，設定 l 暱稱      |
+| git config core.editor "vim"                   | 修改預設編輯器                |
+| git config push.default matching               | 預設發佈到相同分支名稱的遠端分支 |
 
 > 注意：--global 參數比需要緊接著 git config，移到最後面的話，是沒有作用的
 
@@ -36,29 +34,51 @@
 
 ```
 alias.co=checkout
-alias.ci=commit -m
+alias.cm=commit -m
 alias.st=status
-alias.pl=pull
-alias.ps=push
 alias.df=diff
 alias.br=branch
-alias.ap=add -p
 alias.aa=add .
+alias.tree=log --oneline --decorate --graph
+alias.ls='log --graph --pretty=format:"%h <%an> %ar %s"'
+alias.last=log -1 HEAD
+```
+
+<!-- 
+```
+alias.pl=pull
+alias.ps=push
+
 alias.cp=checkout -p
 alias.cc=checkout .
+
 alias.ss=stash
 alias.spp=stash pop
 alias.sdd=stash drop
-alias.rb=rebase
+
 alias.type=cat-file -t
 alias.dump=cat-file -p
-alias.clear=remote prune origin
-alias.tree=log --oneline --decorate --graph
-alias.cm=commit
 alias.lg=log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 alias.logg=log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+``` 
+-->
+
+### 練習題：設定 commit 時要顯示的名稱跟信箱
+
+1. 透過 `git config user.name "demo_user"` 指令，設定 commit 時顯示的名稱。
+1. 透過 `git config user.email "demo_user@demo.com"` 指令，設定 commit 時顯示的名稱。
+1. 透過 `git config --list` 指令，確認已設定成功
+
+```
+🤔 為什麼我看到了兩個 user.name？
 ```
 
+### 練習題：設定常用指令暱稱
+
+1. 透過 `git config --global alias.st status` 指令，設定 status 暱稱
+1. 透過 `git st` 指令，來確定設定完成了
+
+---
 ### 語法結構
 
 ```
