@@ -1,20 +1,17 @@
-# git 分支 CRUD
-
-![](https://git-scm.com/book/en/v2/images/topic-branches-1.png)
-[圖片來源 - git-scm.com](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
-
-git branch --all
-
-```
-* master
-  remotes/origin/HEAD -> origin/master
-  remotes/origin/master
-```
+# git branch 指令
 
 ### 為什麼我們需要分支 (branch)
 
 * 快速試錯
-* 切換半成品
+* 切換不同情境的分支
+
+
+```
+$ git branch --all
+  dev1
+  dev2
+* master
+```
 
 <!-- 
 ### 名稱
@@ -33,18 +30,34 @@ refs/tags
 
 | 範例                          | 說明                                |
 |------------------------------|-------------------------------------|
+| git branch                   | 列出 local 分支                      |
 | git branch dev               | 新增目前位置的 dev 分支                |
 | git branch dev sha1234       | 新增指定位置的 dev 分支                |
-| git branch                   | 列出 local 分支                      |
-| git branch -r                | 列出遠端分支                          |
 | git branch -a                | 列出所有分支                          |
+| git branch -r                | 列出遠端分支                          |
 | git branch -m dev dev2       | 更改分支名稱                          |
 | git branch -d dev2           | 刪除分支                             |
 | git branch -D dev2           | 強迫刪除分支 (即使分支，還沒被 merge 過) |
-| git git push origin dev      | 發佈 dev 分支                        |
+| git push origin dev          | 發佈 dev 分支                        |
 | git push origin --delete dev | 刪除遠端分支                          |
-| git remote prune origin      |  刪除 remote 底下所有過時的分支         |
+| git remote prune origin      | 刪除 remote 底下所有過時的分支         |
 
+### 練習題：新增三個分支，並刪除 `dev3` 分支。
+
+```
+echo "Hello World" >> a.txt && git add . && git commit -m 'm1'
+echo "2" >> b.txt && git add . && git commit -m 'm2'
+echo "3" >> c.txt && git add . && git commit -m 'm3'
+```
+
+1. 透過 `git branch dev1` 指令，建立 `dev1` 分支
+1. 透過 `git branch dev2` 指令，建立 `dev2` 分支
+1. 透過 `git branch dev3` 指令，建立 `dev3` 分支
+1. 透過 `git branch` 指令，查看所有分支
+1. 透過 `git branch -d dev3` 指令，刪除 `dev3` 分支
+1. 透過 `git branch` 指令，查看所有分支
+
+---
 ### 語法結構
 
 ```

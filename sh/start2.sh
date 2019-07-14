@@ -1,0 +1,6 @@
+echo "Hello World" >> README.md && git add . && git commit -m 'init'
+echo "1" >> m1.md && git add . && git commit -m 'm1'
+echo "2" >> m2.md && git add . && git commit -m 'm2'
+echo "3" >> m3.md && git add . && git commit -m 'm3'
+echo "4" >> m4.md && git add . && git commit -m 'm4'
+echo "5" >> m5.md && git add . && git commit -m 'm5'

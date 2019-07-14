@@ -24,29 +24,26 @@ v0.0.1
 | 範例                                           | 說明           |
 |-----------------------------------------------|----------------|
 | git tag                                       |               |
-| git rev-parse v0.0.1                          |                |
 | git tag v0.0.1 sha1234                        | 新增輕量 tag    |
 | git tag v0.0.1 sha1234 -a -m "feature 123"    | 新增有附註的 tag |
 | git tag -d v0.0.1                             | 刪除 tag        |
+| git rev-parse v0.0.1                          |                |
 | git push origin :refs/tags/v0.0.1             | 刪除遠端 tag    |
 
+### 練習題：建立 tag (如果時間不夠，可以跳過)
 
-```
-$ git rev-parse v0.0.1
-d93a61550216134ea18ff5db907f066fd8beb866
-```
+1. 透過 `git tag v0.01` 指令，建立標籤
+1. 透過 `git tag` 指令，列出所有標籤
+1. 透過 `git tag -d v0.01` 指令，刪除標籤
+1. 透過 `git tag v0.0.1 -m '新增了一個偉大的功能'` 指令，建立標籤
+1. 透過 `git show v0.0.1` 指令，查看標籤詳細
+1. 透過 `git tag v0.0.1` 指令，建立標籤
 
-```
-$ git cat-file -p d93a61550216134ea18ff5db907f066fd8beb866
+### 練習題：發佈 tag (如果時間不夠，可以跳過)
 
-tree cbfd7a8e6c7bd0eec9f524b42bdce9ff31bac2e3
-parent 59da3738f9ccf00e1246098a65259b713e848926
-author alincode <alincode@gmail.com> 1526267514 +0000
-committer alincode <alincode@gmail.com> 1526267514 +0000
+1. 透過 `git push origin v0.0.1` 指令，發佈標籤
 
-add hello2 file
-```
-
+---
 ### 語法結構
 
 ```
@@ -81,4 +78,23 @@ Tag listing options
     --sort <key>          field name to sort on
     --points-at <object>  print only tags of the object
     --format <format>     format to use for the output
+```
+
+---
+
+
+```
+$ git rev-parse v0.0.1
+d93a61550216134ea18ff5db907f066fd8beb866
+```
+
+```
+$ git cat-file -p d93a61550216134ea18ff5db907f066fd8beb866
+
+tree cbfd7a8e6c7bd0eec9f524b42bdce9ff31bac2e3
+parent 59da3738f9ccf00e1246098a65259b713e848926
+author alincode <alincode@gmail.com> 1526267514 +0000
+committer alincode <alincode@gmail.com> 1526267514 +0000
+
+add hello2 file
 ```

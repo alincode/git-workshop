@@ -25,52 +25,26 @@ git checkout HEAD^
 git reset @^
 ```
 
-### 練習題
+### 練習題：切換到 dev1 分支位置，並送交一個新的紀錄。
 
-還原尚未 commit 的最新的變動
-
-1. 編輯 README.md
-1. 透過 `git checkout -- README.md` 指令，還原修改的內容
-
-<!--
-答案：
-
-### step1
-
-echo "Hello World" >> README.md && git add . && git commit -m 'init'
-echo "alincode" >> README.md
-
-
-### step2
-
-git checkout -- README.md
--->
-
-### 情境練習
-
-再進行切換分支時，目前分支仍然有還沒有 comment 的修改待 comment。
+1. 透過 `git checkout dev1` 指令，來切換到 `dev1` 分支位置。
+1. 透過 `vi a.txt` 指令，來編輯 a.txt 檔案內容
+1. 透過 `git add .` 和 `git commit -m 'dev1 d1'` 來新增一筆紀錄。
+1. 透過 `git log --oneline --decorate --graph --all` 來查看
 
 ```
-$ git status
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	modified:   b.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
+* 98841bf (HEAD -> dev1) dev1 d1
+* 957d1b3 (master, dev2) m3
+* a26b247 m2
+* 20ab970 m1
 ```
 
-```
-$ git checkout dev
-error: Your local changes to the following files would be overwritten by checkout:
-	b.txt
-Please commit your changes or stash them before you switch branches.
-Aborting
-$
-```
+### 練習題：還原尚未送交的變動
 
+1. 透過 `vi b.txt` 指令，來編輯 b.txt 檔案
+1. 透過 `git checkout b.txt` 指令，還原修改的內容
+
+---
 ### 語法結構
 
 ```

@@ -33,13 +33,15 @@
 ### 推薦設定的 alias
 
 ```
+git config --global alias.tree "log --oneline --decorate --graph --all"
+
 alias.co=checkout
 alias.cm=commit -m
 alias.st=status
 alias.df=diff
 alias.br=branch
 alias.aa=add .
-alias.tree=log --oneline --decorate --graph
+alias.tree=log --oneline --decorate --graph --all
 alias.ls='log --graph --pretty=format:"%h <%an> %ar %s"'
 alias.last=log -1 HEAD
 ```

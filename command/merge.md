@@ -42,15 +42,50 @@ git merge dev —-no-ff
 | git merge master | 合併 master 分支的資料，到目前分支 |
 | git merge –abort | 放棄合併                  |
 
-### 實際操作流程
+### 練習題： 合併 dev1 和 dev2 的內容至 master 分支
+
+1. 透過 `git checkout master` 指令，切換到 master 分支
+1. 透過 `git merge dev1` 指令，來合併 dev1 分支的內容
+1. 自動合併成功
+1. 透過 `git merge dev2` 指令，來合併 dev2 分支的內容
+1. 自動合併發生衝突
 
 ```
-git pull
-git log --graph --oneline --decorate --all
-git diff master
-git merge master
+$ git merge dev1
+
+Updating 957d1b3..98841bf
+Fast-forward
+ a.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ git merge dev2
+
+Auto-merging a.txt
+CONFLICT (content): Merge conflict in a.txt
+Automatic merge failed; fix conflicts and then commit the result.
 ```
 
+<!-- 
+$ git reflog
+
+98841bf (HEAD -> master, dev1) HEAD@{0}: merge dev1: Fast-forward
+957d1b3 HEAD@{1}: checkout: moving from dev1 to master
+98841bf (HEAD -> master, dev1) HEAD@{2}: checkout: moving from dev2 to dev1
+dca0fc9 (dev2) HEAD@{3}: checkout: moving from dev2 to dev2
+dca0fc9 (dev2) HEAD@{4}: commit: dev2 d1
+957d1b3 HEAD@{5}: checkout: moving from dev1 to dev2
+98841bf (HEAD -> master, dev1) HEAD@{6}: reset: moving to HEAD
+98841bf (HEAD -> master, dev1) HEAD@{7}: checkout: moving from dev1 to dev1
+98841bf (HEAD -> master, dev1) HEAD@{8}: commit: dev1 d1
+957d1b3 HEAD@{9}: checkout: moving from master to dev1
+957d1b3 HEAD@{10}: commit: m3
+a26b247 HEAD@{11}: commit: m2
+20ab970 HEAD@{12}: commit (initial): m1
+
+$ git reset 957d1b3 --hard
+ -->
+
+---
 ### 語法結構
 
 ```

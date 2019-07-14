@@ -7,7 +7,7 @@
 #### Step1
 
 ```
-vi start.sh
+sh start1.sh
 
 echo "Hello World" >> README.md && git add . && git commit -m 'init'
 echo "1" >> m1.md && git add . && git commit -m 'm1'
@@ -49,7 +49,7 @@ git merge develop
 #### Step1
 
 ```
-vi start.sh
+vi start2.sh
 
 echo "Hello World" >> README.md && git add . && git commit -m 'init'
 echo "1" >> m1.md && git add . && git commit -m 'm1'
@@ -58,7 +58,7 @@ echo "3" >> m3.md && git add . && git commit -m 'm3'
 echo "4" >> m4.md && git add . && git commit -m 'm4'
 echo "5" >> m5.md && git add . && git commit -m 'm5'
 
-sh start.sh
+sh start2.sh
 ```
 
 ![](assets/rebase_i1.png)
@@ -92,7 +92,7 @@ git rebase -i 124519e
 #### Step1
 
 ```
-vi start.sh
+vi start3.sh
 
 echo "Hello World" >> README.md && git add . && git commit -m 'init'
 echo "1" >> m1.md && git add . && git commit -m 'm1'
@@ -108,7 +108,7 @@ echo "2" >> d2.md && git add . && git commit -m 'd2'
 echo "3" >> d3.md && git add . && git commit -m 'd3'
 echo "4" >> d4.md && git add . && git commit -m 'd4'
 
-sh start.sh
+sh start3.sh
 ```
 
 ![](assets/rebase_onto1.png)
@@ -137,7 +137,7 @@ git rebase develop
 #### Step1
 
 ```
-vi start.sh
+vi start4.sh
 
 echo "Hello World" >> README.md && git add . && git commit -m 'init'
 echo "1" >> m1.md && git add . && git commit -m 'm1'
@@ -155,7 +155,7 @@ git checkout master
 echo "4" >> m4.md && git add . && git commit -m 'm4'
 echo "5" >> m5.md && git add . && git commit -m 'm5'
 
-sh start.sh
+sh start4.sh
 ```
 
 ![](assets/rebase_two_branch1.png)
@@ -188,7 +188,7 @@ git rebase develop
 * f 有 2 個
 
 ```
-vi start.sh
+vi start5.sh
 
 echo "Hello World" >> README.md && git add . && git commit -m 'init'
 echo "1" >> m1.md && git add . && git commit -m 'm1'
@@ -204,7 +204,7 @@ echo "2" >> d2.md && git add . && git commit -m 'd2'
 echo "3" >> d3.md && git add . && git commit -m 'd3'
 echo "4" >> d4.md && git add . && git commit -m 'd4'
 
-sh start.sh
+sh start5.sh
 ```
 
 ![](assets/rebase_mistake1.png)

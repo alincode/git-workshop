@@ -30,6 +30,9 @@ git push
 
 ### 情境：有時候 push 不上去
 
+1. `git pull`
+1. `git push`
+
 ### 語法結構
 
 ```
