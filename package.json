@@ -1,0 +1,26 @@
+{
+  "name": "git-workshop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "git workshop material",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook": "^2.6.9",
+    "gitbook-cli": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "gitbook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alincode/git-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alincode/git-workshop/issues"
+  },
+  "homepage": "https://github.com/alincode/git-workshop#readme"
+}

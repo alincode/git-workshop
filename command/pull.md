@@ -8,9 +8,10 @@ git pull = git fetch + git merge
 
 ### 常用範例
 
-| 範例       | 說明               |
-|----------|------------------|
-| git pull | 將遠端的資料更新到本地端，並合併 |
+| 範例             | 說明                                               |
+| ---------------- | -------------------------------------------------- |
+| git pull         | 將遠端的資料更新到本地端，並合併                   |
+| git pull --prune | prune remote-tracking branches no longer on remote |
 
 ### 語法結構
 
