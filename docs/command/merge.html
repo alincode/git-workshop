@@ -1,0 +1,1137 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>合併 merge · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../foundation/conflict.html" />
+    
+    
+    <link rel="prev" href="stash.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Git 介紹
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../foundation/what.html">
+            
+                <a href="../foundation/what.html">
+            
+                    
+                    什麼是 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../foundation/why.html">
+            
+                <a href="../foundation/why.html">
+            
+                    
+                    為什麼我們需要 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../setup/mac.html">
+            
+                <a href="../setup/mac.html">
+            
+                    
+                    在 Mac 上安裝 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../setup/window.html">
+            
+                <a href="../setup/window.html">
+            
+                    
+                    在 Window 上安裝 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../foundation/terminal.html">
+            
+                <a href="../foundation/terminal.html">
+            
+                    
+                    補充：終端機常用指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    基本 Git 操作 (上)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="init.html">
+            
+                <a href="init.html">
+            
+                    
+                    初始化專案 init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    設定檔 config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="status.html">
+            
+                <a href="status.html">
+            
+                    
+                    狀態 status
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="add.html">
+            
+                <a href="add.html">
+            
+                    
+                    新增 add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="commit.html">
+            
+                <a href="commit.html">
+            
+                    
+                    送交 commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="log.html">
+            
+                <a href="log.html">
+            
+                    
+                    檢視 log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="show.html">
+            
+                <a href="show.html">
+            
+                    
+                    檢視 show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="rm.html">
+            
+                <a href="rm.html">
+            
+                    
+                    刪除 rm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="mv.html">
+            
+                <a href="mv.html">
+            
+                    
+                    重新命名 mv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="diff.html">
+            
+                <a href="diff.html">
+            
+                    
+                    比對差異 diff
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    基本 Git 操作 (下)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="branch.html">
+            
+                <a href="branch.html">
+            
+                    
+                    分支 branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="checkout.html">
+            
+                <a href="checkout.html">
+            
+                    
+                    切換分支 checkout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="stash.html">
+            
+                <a href="stash.html">
+            
+                    
+                    暫存 stash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="merge.html">
+            
+                <a href="merge.html">
+            
+                    
+                    合併 merge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../foundation/conflict.html">
+            
+                <a href="../foundation/conflict.html">
+            
+                    
+                    解 merge 衝突
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="tag.html">
+            
+                <a href="tag.html">
+            
+                    
+                    標籤 tag
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    修改送交
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="reset.html">
+            
+                <a href="reset.html">
+            
+                    
+                    重新指向 reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="rebase.html">
+            
+                <a href="rebase.html">
+            
+                    
+                    重新定位 rebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../practice/rebase.html">
+            
+                <a href="../practice/rebase.html">
+            
+                    
+                    練習題 rebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../practice/rebase-conflict.html">
+            
+                <a href="../practice/rebase-conflict.html">
+            
+                    
+                    解 rebase 衝突
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="revert.html">
+            
+                <a href="revert.html">
+            
+                    
+                    反悔 revert
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../github/">
+            
+                <a href="../github/">
+            
+                    
+                    GitHub 基本操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../github/signup.html">
+            
+                <a href="../github/signup.html">
+            
+                    
+                    申請 GitHub 帳號
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../github/repo.html">
+            
+                <a href="../github/repo.html">
+            
+                    
+                    建立一個新的儲存庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../github/clone.html">
+            
+                <a href="../github/clone.html">
+            
+                    
+                    下載儲存庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../github/fork.html">
+            
+                <a href="../github/fork.html">
+            
+                    
+                    fork 別人的儲存庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../github/pr.html">
+            
+                <a href="../github/pr.html">
+            
+                    
+                    發一個 PR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../github/mise.html">
+            
+                <a href="../github/mise.html">
+            
+                    
+                    其他補充
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    遠端 Git 操作
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../foundation/container.html">
+            
+                <a href="../foundation/container.html">
+            
+                    
+                    容器的概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="remote.html">
+            
+                <a href="remote.html">
+            
+                    
+                    remote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="clone.html">
+            
+                <a href="clone.html">
+            
+                    
+                    複製 clone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="pull.html">
+            
+                <a href="pull.html">
+            
+                    
+                    拉 pull
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="fetch.html">
+            
+                <a href="fetch.html">
+            
+                    
+                    更新 fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="push.html">
+            
+                <a href="push.html">
+            
+                    
+                    部署 push
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Git GUI 工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../gui/sourcetree.html">
+            
+                <a href="../gui/sourcetree.html">
+            
+                    
+                    Source Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../gui/practice.html">
+            
+                <a href="../gui/practice.html">
+            
+                    
+                    練習題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Git Flow 觀念講解
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../git-flow/">
+            
+                <a href="../git-flow/">
+            
+                    
+                    整體概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../git-flow/master.html">
+            
+                <a href="../git-flow/master.html">
+            
+                    
+                    master 分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../git-flow/feature.html">
+            
+                <a href="../git-flow/feature.html">
+            
+                    
+                    feature 分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../git-flow/hotfix.html">
+            
+                <a href="../git-flow/hotfix.html">
+            
+                    
+                    hotfix 分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    特殊情境實用篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="blame.html">
+            
+                <a href="blame.html">
+            
+                    
+                    責備 blame
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="grep.html">
+            
+                <a href="grep.html">
+            
+                    
+                    grep
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="reflog.html">
+            
+                <a href="reflog.html">
+            
+                    
+                    reflog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../tips.html">
+            
+                <a href="../tips.html">
+            
+                    
+                    實用小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >合併 merge</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="git-merge-&#x6307;&#x4EE4;">git merge &#x6307;&#x4EE4;</h1>
+<ul>
+<li>&#x5408;&#x4F75;</li>
+<li>&#x4FEE;&#x6539;&#x5167;&#x5BB9;&#x7684;&#x6B77;&#x53F2;&#x8A18;&#x9304;&#x6703;&#x7DAD;&#x6301;&#x539F;&#x72C0;&#xFF0C;&#x4F46;&#x662F;&#x5408;&#x4F75;&#x5F8C;&#x7684;&#x6B77;&#x53F2;&#x7D00;&#x9304;&#x6703;&#x8B8A;&#x5F97;&#x66F4;&#x8907;&#x96DC;&#x3002;</li>
+<li>&#x9810;&#x8A2D;&#x6703;&#x4EE5; <code>fast-forward</code> &#x7684;&#x6A21;&#x5F0F;&#x9032;&#x884C;&#x3002;</li>
+</ul>
+<h3 id="fast-forward-merge">Fast-Forward Merge</h3>
+<p>&#x7576;&#x4F60;&#x76EE;&#x524D;&#x7684;&#x4F4D;&#x7F6E; (HEAD) &#x662F;&#x67D0;&#x500B;&#x8981;&#x88AB; merge branch &#x4E0A;&#x7684; commit &#x7684; root commit &#xFF0C;&#x5728;&#x6C92;&#x6709;&#x4EFB;&#x4F55;&#x65B0;&#x7684; commit &#x7684;&#x60C5;&#x5F62;&#x4E0B;&#xFF0C;&#x8981; merge &#x56DE;&#x4F86;&#x7684;&#x6642;&#x5019;&#xFF0C;&#x5C31;&#x6703;&#x89F8;&#x767C; fast-forward &#x3002;</p>
+<p>&#x7531;&#x65BC;&#x5728;&#x539F;&#x672C;&#x7684;&#x5206;&#x652F;&#x4E0A;&#x6C92;&#x6709;&#x65B0;&#x7684;&#x8B8A;&#x66F4;&#x7D00;&#x9304;&#x9700;&#x8981;&#x88AB; merged &#xFF0C;&#x9810;&#x8A2D;&#x5C31;&#x6703;&#x89F8;&#x767C; fast-forward merge &#xFF0C;&#x5C31;&#x6703;&#x76F4;&#x63A5;&#x628A;&#x9019;&#x500B; commit HEAD &#x79FB;&#x52D5;&#x5230;&#x8981;&#x88AB; merge &#x7684; commit &#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4E5F;&#x4E0D;&#x6703;&#x65B0;&#x589E;&#x4E00;&#x500B; merge commit &#x3002;</p>
+<h4 id="merge-&#x4E4B;&#x524D;">merge &#x4E4B;&#x524D;</h4>
+<p><img src="assets/before-fast-forward.png" alt=""></p>
+<h4 id="merge-&#x4E4B;&#x5F8C;">merge &#x4E4B;&#x5F8C;</h4>
+<p><img src="assets/fast-forward.png" alt=""></p>
+<h3 id="no-fast-forward-merge">No Fast-Forward Merge</h3>
+<pre><code>git merge dev &#x2014;-no-ff
+</code></pre><p><img src="assets/noff.png" alt=""></p>
+<p><strong>&#x4F7F;&#x7528;&#x60C5;&#x5883;</strong></p>
+<ul>
+<li>&#x5728;&#x958B;&#x767C;&#x4E00;&#x500B;&#x529F;&#x80FD;&#x6642;&#xFF0C;&#x901A;&#x5E38;&#x90FD;&#x6703;&#x958B;&#x4E00;&#x652F;&#x65B0;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x4F7F;&#x7528; --no-ff &#x53EF;&#x4EE5;&#x8B93;&#x6210;&#x54E1;&#x5728;&#x65E5;&#x5F8C;&#x53EF;&#x4EE5;&#x5F88;&#x6E05;&#x695A;&#x8FA8;&#x8B58;&#x4E0D;&#x540C;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x6240;&#x5305;&#x542B;&#x7684;&#x9001;&#x4EA4;&#x6B77;&#x53F2;&#x7D00;&#x9304;&#x6709;&#x54EA;&#x4E9B;&#x3002;</li>
+<li>GitHub merge pull request &#x7684;&#x7B56;&#x7565;&#xFF0C;&#x4E5F;&#x662F;&#x4F7F;&#x7528; --no-ff &#xFF0C;&#x4E5F;&#x662F;&#x8B93;&#x958B;&#x767C;&#x8005;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x8FA8;&#x5225;&#x3002;</li>
+</ul>
+<p><strong>&#x7F3A;&#x9EDE;</strong></p>
+<ul>
+<li>&#x5373;&#x4F7F;&#x4E00;&#x500B;&#x5F88;&#x5C0F;&#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x4E5F;&#x6703;&#x62C9;&#x51FA;&#x4E00;&#x689D;&#x652F;&#x7DDA;&#x5716;&#x3002;</li>
+</ul>
+<h3 id="&#x5E38;&#x7528;&#x7BC4;&#x4F8B;">&#x5E38;&#x7528;&#x7BC4;&#x4F8B;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x7BC4;&#x4F8B;</th>
+<th>&#x8AAA;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git merge master</td>
+<td>&#x5408;&#x4F75; master &#x5206;&#x652F;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x5230;&#x76EE;&#x524D;&#x5206;&#x652F;</td>
+</tr>
+<tr>
+<td>git merge &#x2013;abort</td>
+<td>&#x653E;&#x68C4;&#x5408;&#x4F75;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x7DF4;&#x7FD2;&#x984C;&#xFF1A;-&#x5408;&#x4F75;-dev1-&#x548C;-dev2-&#x7684;&#x5167;&#x5BB9;&#x81F3;-master-&#x5206;&#x652F;">&#x7DF4;&#x7FD2;&#x984C;&#xFF1A; &#x5408;&#x4F75; dev1 &#x548C; dev2 &#x7684;&#x5167;&#x5BB9;&#x81F3; master &#x5206;&#x652F;</h3>
+<ol>
+<li>&#x900F;&#x904E; <code>git checkout master</code> &#x6307;&#x4EE4;&#xFF0C;&#x5207;&#x63DB;&#x5230; master &#x5206;&#x652F;</li>
+<li>&#x900F;&#x904E; <code>git merge dev1</code> &#x6307;&#x4EE4;&#xFF0C;&#x4F86;&#x5408;&#x4F75; dev1 &#x5206;&#x652F;&#x7684;&#x5167;&#x5BB9;</li>
+<li>&#x81EA;&#x52D5;&#x5408;&#x4F75;&#x6210;&#x529F;</li>
+<li>&#x900F;&#x904E; <code>git merge dev2</code> &#x6307;&#x4EE4;&#xFF0C;&#x4F86;&#x5408;&#x4F75; dev2 &#x5206;&#x652F;&#x7684;&#x5167;&#x5BB9;</li>
+<li>&#x81EA;&#x52D5;&#x5408;&#x4F75;&#x767C;&#x751F;&#x885D;&#x7A81;</li>
+</ol>
+<pre><code>$ git merge dev1
+
+Updating 957d1b3..98841bf
+Fast-forward
+ a.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ git merge dev2
+
+Auto-merging a.txt
+CONFLICT (content): Merge conflict in a.txt
+Automatic merge failed; fix conflicts and then commit the result.
+</code></pre><!-- 
+$ git reflog
+
+98841bf (HEAD -> master, dev1) HEAD@{0}: merge dev1: Fast-forward
+957d1b3 HEAD@{1}: checkout: moving from dev1 to master
+98841bf (HEAD -> master, dev1) HEAD@{2}: checkout: moving from dev2 to dev1
+dca0fc9 (dev2) HEAD@{3}: checkout: moving from dev2 to dev2
+dca0fc9 (dev2) HEAD@{4}: commit: dev2 d1
+957d1b3 HEAD@{5}: checkout: moving from dev1 to dev2
+98841bf (HEAD -> master, dev1) HEAD@{6}: reset: moving to HEAD
+98841bf (HEAD -> master, dev1) HEAD@{7}: checkout: moving from dev1 to dev1
+98841bf (HEAD -> master, dev1) HEAD@{8}: commit: dev1 d1
+957d1b3 HEAD@{9}: checkout: moving from master to dev1
+957d1b3 HEAD@{10}: commit: m3
+a26b247 HEAD@{11}: commit: m2
+20ab970 HEAD@{12}: commit (initial): m1
+
+$ git reset 957d1b3 --hard
+ -->
+<hr>
+<h3 id="&#x8A9E;&#x6CD5;&#x7D50;&#x69CB;">&#x8A9E;&#x6CD5;&#x7D50;&#x69CB;</h3>
+<pre><code>usage: git merge [&lt;options&gt;] [&lt;commit&gt;...]
+   or: git merge [&lt;options&gt;] &lt;msg&gt; HEAD &lt;commit&gt;
+   or: git merge --abort
+
+    -n                    do not show a diffstat at the end of the merge
+    --stat                show a diffstat at the end of the merge
+    --summary             (synonym to --stat)
+    --log[=&lt;n&gt;]           add (at most &lt;n&gt;) entries from shortlog to merge commit message
+    --squash              create a single commit instead of doing a merge
+    --commit              perform a commit if the merge succeeds (default)
+    -e, --edit            edit message before committing
+    --ff                  allow fast-forward (default)
+    --ff-only             abort if fast-forward is not possible
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --verify-signatures   Verify that the named commit has a valid GPG signature
+    -s, --strategy &lt;strategy&gt;
+                          merge strategy to use
+    -X, --strategy-option &lt;option=value&gt;
+                          option for selected merge strategy
+    -m, --message &lt;message&gt;
+                          merge commit message (for a non-fast-forward merge)
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --abort               abort the current in-progress merge
+    --progress            force progress reporting
+    -S, --gpg-sign[=&lt;key-id&gt;]
+                          GPG sign commit
+    --overwrite-ignore    update ignored files (default)
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="stash.html" class="navigation navigation-prev " aria-label="Previous page: 暫存 stash">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../foundation/conflict.html" class="navigation navigation-next " aria-label="Next page: 解 merge 衝突">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"合併 merge","level":"1.4.4","depth":2,"next":{"title":"解 merge 衝突","level":"1.4.5","depth":2,"path":"foundation/conflict.md","ref":"foundation/conflict.md","articles":[]},"previous":{"title":"暫存 stash","level":"1.4.3","depth":2,"path":"command/stash.md","ref":"command/stash.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"command/merge.md","mtime":"2021-02-25T00:23:07.401Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-25T00:24:54.933Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
